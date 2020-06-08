@@ -1,1 +1,1 @@
-# brilliantprogrammers.github-io
+# brilliantprogrammers.github.io
