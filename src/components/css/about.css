@@ -1,0 +1,16 @@
+#education{
+    height: 350px;
+    background-color: rgb(0, 255, 255,0.6);
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+    display:table;
+    text-align: center;
+    color: rgb(39, 34, 34);
+    width: 100%;
+}
+
+#education h1 { 
+    display:table-cell; 
+    vertical-align:middle;
+    font-size: 20px;
+}

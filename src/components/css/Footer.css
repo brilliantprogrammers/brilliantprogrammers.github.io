@@ -1,0 +1,47 @@
+#footercon{
+    margin-top: 30px;
+    padding-top: 100px;
+    background-image: url('../images/footer.svg');
+    padding-bottom: 60px;
+    color: white;
+}
+#social_{
+    color: white;
+}
+#social_:hover{
+    color: yellow;
+}
+.navlink{
+    text-decoration: none;
+    color: white;
+}
+#navlist_{
+    width: 100px;
+}
+.navlink:hover{
+    color: yellow;
+    text-decoration: none;
+}
+.navlinkw{
+    color: rgb(9, 255, 0);
+    text-decoration: none;
+}
+.navlinkw:hover{
+    color: rgb(144, 238, 214);
+    text-decoration: none;
+}
+#social_col{
+    text-align: center;
+}
+#copyright{
+    font-size: small;
+    width: 100%;
+    transition: transform .4s; 
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#copyright:hover{
+    color: yellow;
+    transform: scale(1.1);
+    transform-origin: 50% 50%;  
+}
