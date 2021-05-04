@@ -4,7 +4,7 @@ import './css/Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLink } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter,faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons"
-import { Link } from 'react-router-dom'
+import { BrowserRouter as Router,Link } from 'react-router-dom'
 
 class Foot extends Component {
     render() { 

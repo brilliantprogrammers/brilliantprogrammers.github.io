@@ -12,7 +12,7 @@ import About from './components/About';
 function App() {
   return (
     <div className="App">
-      <Router basename={window.location.pathname || ''}> 
+      <Router basename="/"> 
         <Nav/>
         <Switch>  
           <Route exact path="/">
