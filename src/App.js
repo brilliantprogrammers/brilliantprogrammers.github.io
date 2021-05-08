@@ -13,7 +13,7 @@ import About from './components/About';
 import ScrollToTop from './components/scroll'
 function App() {
   return (
-    <Router basename={'/brilliantprogrammersite'}>
+    <Router basename={'/'}>
       <ScrollToTop />
       <div className="App"> 
           <Nav/>
