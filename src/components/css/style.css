@@ -2,10 +2,15 @@
     box-shadow: 1px 1px 4px grey;
 
 }
+#navlinkh{
+    text-decoration: none;
+    color: gray;
+}
 #navlinkh:hover{
     color: purple;
 }
 #navlinkk{
+    text-decoration: none;
     color: red;
 }
 #navlinkk:hover{

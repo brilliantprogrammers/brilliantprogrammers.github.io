@@ -4,7 +4,7 @@ import './css/Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLink } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter,faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons"
-import { BrowserRouter as Router,Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 class Foot extends Component {
     render() { 
@@ -15,11 +15,11 @@ class Foot extends Component {
                     <div class="col-5 offset-1 col-sm-2">
                         <h5>Links</h5>
                         <ul class="list-unstyled">
-                            <li id="navlist_"><Link className="navlink" href="/"><FontAwesomeIcon icon={faLink} />Home</Link></li>
-                            <li id="navlist_"><Link className="navlink" href="/project"><FontAwesomeIcon icon={faLink} />Python</Link></li>
-                            <li id="navlist_"><Link className="navlink" href="/"><FontAwesomeIcon icon={faLink} />Django</Link></li>
-                            <li id="navlist_"><Link className="navlink" href="/Contact"><FontAwesomeIcon icon={faLink} />Contact Us</Link></li>
-                            <li id="navlist_"><Link className="navlink" href="/About"><FontAwesomeIcon icon={faLink} />About Us</Link></li>
+                            <li id="navlist_"><Link className="navlink" to="/"><FontAwesomeIcon icon={faLink} />Home</Link></li>
+                            <li id="navlist_"><Link className="navlink" to="/project"><FontAwesomeIcon icon={faLink} />Python</Link></li>
+                            <li id="navlist_"><Link className="navlink" to="/"><FontAwesomeIcon icon={faLink} />Django</Link></li>
+                            <li id="navlist_"><Link className="navlink" to="/Contact"><FontAwesomeIcon icon={faLink} />Contact Us</Link></li>
+                            <li id="navlist_"><Link className="navlink" to="/About"><FontAwesomeIcon icon={faLink} />About Us</Link></li>
                         </ul>
                     </div>
                 </Col>
