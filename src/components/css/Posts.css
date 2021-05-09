@@ -1,0 +1,12 @@
+.posts{
+    min-height: 100%;
+}
+.loding{
+    width: 100%;
+}
+.load{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
