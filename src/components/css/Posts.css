@@ -1,5 +1,8 @@
 .posts{
     min-height: 100%;
+    min-height: 400px;
+    padding: 23px;
+    
 }
 .loding{
     width: 100%;
@@ -9,3 +12,60 @@
     margin-left: auto;
     margin-right: auto;
 }
+.posts_row{
+    width: 100%;
+}
+#img_{
+    width: 100%;
+}
+.posts_heading{
+    
+    padding-top:20px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    text-align: left;
+    width: 100%;
+    font-size: 7vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#posts_body{
+    clear: both;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.author{
+    float: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.time{
+    float: right;
+}
+#main{
+    color: purple;
+}
+#code{
+    background-color: gray;
+}
+#second{
+    font-weight: 800;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .posts{
+        padding: 30px 70px;
+        
+    }
+    .posts_heading{
+        text-align: center;
+        width: 100%;
+        font-size: 4.2vw;
+    }
+    
+  }
+  

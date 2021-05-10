@@ -1,6 +1,7 @@
  
 import React, { useEffect, useState } from 'react'
 import { Container,Row,Col,Card,Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 import './css/Home.css'
 import load from './images/load.svg'
 
@@ -34,7 +35,7 @@ function Posts_card() {
                             <Card.Text>
                             {info.body.slice(0,120)+"....."}
                             </Card.Text>
-                            <Button id="read_btn" variant="success">Read More</Button>
+                            <Button id="read_btn" variant="success"><Link to={"/blog/" + info.id.toString()}>Read More</Link></Button>
                         </Card.Body>
                     </Card>
                     
