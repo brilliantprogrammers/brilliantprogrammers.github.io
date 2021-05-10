@@ -23,27 +23,31 @@ function Posts_card() {
       
     return ( 
         appState.loading ? (<h3 className="loding"><img className="load" alt="loading..." src={load}/></h3>) : (
-            <Container className="themed-container" key={appState.repos.id} fluid={true}>
-            <Row  xs="1" sm="2" md="4">
-            <Col id="posts">
-                    <Card >
-                        <div id="img__"><Card.Img id="img_posts" variant="top" src={Back} /></div>
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                            </Card.Text>
-                            <Button id="read_btn" variant="danger">Read More</Button>
-                        </Card.Body>
-                    </Card>
-                    
-                </Col>
-                
-                
-                
-            </Row>
-        </Container>
+            appState.repos.map( info =>{
+                <Container className="themed-container" key={appState.repos.id} fluid={true}>
+                    <Row  xs="1" sm="2" md="4">
+                    <Col id="posts">
+                            <Card >
+                                <div id="img__"><Card.Img id="img_posts" variant="top" src={"http://127.0.0.1:8000"+info.image} /></div>
+                                <Card.Body>
+                                    <Card.Title>{info.heading}</Card.Title>
+                                    <Card.Text>
+                                    {info.body}
+                                    </Card.Text>
+                                    <Button id="read_btn" variant="danger">Read More</Button>
+                                </Card.Body>
+                            </Card>
+                            
+                        </Col>
+                        
+                        
+                        
+                    </Row>
+                </Container>
+            }
+
+
+            )
         )
         
         );
