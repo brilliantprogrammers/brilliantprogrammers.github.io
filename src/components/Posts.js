@@ -11,7 +11,7 @@ function Posts() {
   
     useEffect(() => {
       setAppState({ loading: true });
-      const apiUrl = `http://127.0.0.1:8000/blog/2`;
+      const apiUrl = `https://brillianttyagi.pythonanywhere.com/blog/`;
       fetch(apiUrl)
         .then((res) => res.json())
         .then((repos) => {
