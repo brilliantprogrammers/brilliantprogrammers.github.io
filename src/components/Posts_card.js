@@ -23,34 +23,36 @@ function Posts_card() {
       
     return ( 
         appState.loading ? (<h3 className="loding"><img className="load" alt="loading..." src={load}/></h3>) : (
-            appState.repos.map( info =>{
-                <Container className="themed-container" key={appState.repos.id} fluid={true}>
-                    <Row  xs="1" sm="2" md="4">
-                    <Col id="posts">
-                            <Card >
-                                <div id="img__"><Card.Img id="img_posts" variant="top" src={"http://127.0.0.1:8000"+info.image} /></div>
-                                <Card.Body>
-                                    <Card.Title>{info.heading}</Card.Title>
-                                    <Card.Text>
-                                    {info.body}
-                                    </Card.Text>
-                                    <Button id="read_btn" variant="danger">Read More</Button>
-                                </Card.Body>
-                            </Card>
-                            
-                        </Col>
-                        
-                        
-                        
-                    </Row>
-                </Container>
+            <Container className="themed-container" key={appState.repos.id} fluid={true}>
+            { appState.repos.map( (info) =>(
+            
+            <Row  xs="1" sm="2" md="4">
+                <Col id="posts">
+                    <Card >
+                        <div id="img__"><Card.Img id="img_posts" variant="top" src={"http://127.0.0.1:8000"+info.image} /></div>
+                        <Card.Body>
+                            <Card.Title>{info.heading}</Card.Title>
+                            <Card.Text>
+                            {info.body.slice(0,120)+"....."}
+                            </Card.Text>
+                            <Button id="read_btn" variant="success">Read More</Button>
+                        </Card.Body>
+                    </Card>
+                    
+                </Col>
+                
+                
+                
+            </Row>
+             ) )
             }
+                
+            </Container>
 
 
             )
         )
         
-        );
 }
  
 export default Posts_card;
