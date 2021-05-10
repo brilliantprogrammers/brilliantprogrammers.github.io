@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Work from './images/work.svg'
 import Back from './images/backend.jpg'
 import './css/Home.css'
+import Posts_card from './Posts_card'
 class Home extends Component {
     render() { 
         return ( 
@@ -38,108 +39,7 @@ class Home extends Component {
                 <Row>
                     <h1 id="recent">Recent Posts</h1>
                 </Row>
-                <Row  xs="1" sm="2" md="4">
-                <Col id="posts">
-                        <Card >
-                            <div id="img__"><Card.Img id="img_posts" variant="top" src={Back} /></div>
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                                </Card.Text>
-                                <Button id="read_btn" variant="danger">Read More</Button>
-                            </Card.Body>
-                        </Card>
-                        
-                    </Col>
-                    <Col id="posts">
-                        <Card >
-                            <div id="img__"><Card.Img id="img_posts" variant="top" src={Back} /></div>
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                                </Card.Text>
-                                <Button id="read_btn" variant="danger">Read More</Button>
-                            </Card.Body>
-                        </Card>
-                        
-                    </Col>
-                    <Col id="posts">
-                        <Card >
-                            <div id="img__"><Card.Img id="img_posts" variant="top" src={Back} /></div>
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                                </Card.Text>
-                                <Button id="read_btn" variant="danger">Read More</Button>
-                            </Card.Body>
-                        </Card>
-                        
-                    </Col>
-                    <Col id="posts">
-                        <Card >
-                            <div id="img__"><Card.Img id="img_posts" variant="top" src={Back} /></div>
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                                </Card.Text>
-                                <Button id="read_btn" variant="danger">Read More</Button>
-                            </Card.Body>
-                        </Card>
-                        
-                    </Col>
-                    <Col id="posts">
-                        <Card >
-                            <div id="img__"><Card.Img id="img_posts" variant="top" src={Back} /></div>
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                                </Card.Text>
-                                <Button id="read_btn" variant="danger">Read More</Button>
-                            </Card.Body>
-                        </Card>
-                        
-                    </Col>
-                    <Col id="posts">
-                        <Card >
-                            <div id="img__"><Card.Img id="img_posts" variant="top" src={Back} /></div>
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                                </Card.Text>
-                                <Button id="read_btn" variant="danger">Read More</Button>
-                            </Card.Body>
-                        </Card>
-                        
-                    </Col>
-                    <Col id="posts">
-                        <Card >
-                            <div id="img__"><Card.Img id="img_posts" variant="top" src={Back} /></div>
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                                </Card.Text>
-                                <Button id="read_btn" variant="danger">Read More</Button>
-                            </Card.Body>
-                        </Card>
-                        
-                    </Col>
-                    
-                    
-                </Row>
+                < Posts_card />
             </Container>
          );
     }
