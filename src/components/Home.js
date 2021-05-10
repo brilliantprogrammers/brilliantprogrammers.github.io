@@ -1,9 +1,8 @@
  
 import React, { Component } from 'react'
-import { Container,Row,Col,Card,Button } from 'react-bootstrap'
+import { Container,Row,Col } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Work from './images/work.svg'
-import Back from './images/backend.jpg'
 import './css/Home.css'
 import Posts_card from './Posts_card'
 class Home extends Component {
