@@ -28,14 +28,14 @@ function Posts_card() {
             
             <Row  xs="1" sm="2" md="4">
                 <Col id="posts">
-                    <Card >
+                    <Card id="posts_card">
                         <div id="img__"><Card.Img id="img_posts" variant="top" src={"https://brillianttyagi.pythonanywhere.com/"+info.image} /></div>
                         <Card.Body>
                             <Card.Title>{info.heading}</Card.Title>
                             <Card.Text>
                             {info.body.slice(0,120)+"....."}
                             </Card.Text>
-                            <Button id="read_btn" variant="success"><Link to={"/blog/" + info.id.toString()}>Read More</Link></Button>
+                            <Card.Link><Link to={"/blog/" + info.id.toString()}>Read More</Link></Card.Link>
                         </Card.Body>
                     </Card>
                     
