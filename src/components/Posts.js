@@ -25,7 +25,7 @@ function Posts(props) {
         appState.loading ? (<h3 className="loding"><img className="load" alt="loading..." src={load}/></h3>) : (
             <Container key={appState.repos.id} className="posts">
                 <Row><h1 className="posts_heading">{appState.repos.heading}</h1></Row>
-                <Row className="posts_row"><img id="img_" src={"https://brillianttyagi.pythonanywhere.com/"+appState.repos.image} /></Row>
+                <Row id="pic_div"><img id="img_" alt={appState.repos.heading} src={"https://brillianttyagi.pythonanywhere.com/"+appState.repos.image} /></Row>
                 <Row><span className="author"><FontAwesomeIcon icon={faUser} />{appState.repos.author}</span><span className="time">{appState.repos.created}</span></Row>
                 <Row id= "posts_body" dangerouslySetInnerHTML={{__html: appState.repos.body}}></Row>
             </Container>
