@@ -27,7 +27,8 @@ function Posts(props) {
             <Container key={appState.repos.id} className="posts">
               <Helmet>
                 <title>{appState.repos.heading}</title>
-                <meta name="description" content={appState.repos.heading.toString()} />
+                <meta name="description" content="hii" />
+                <meta name="keywords" content="hii" />
               </Helmet>
               <Row><h1 className="posts_heading">{appState.repos.heading}</h1></Row>
               <Row id="pic_div"><img id="img_" alt={appState.repos.heading} src={"https://brillianttyagi.pythonanywhere.com/"+appState.repos.image} /></Row>
