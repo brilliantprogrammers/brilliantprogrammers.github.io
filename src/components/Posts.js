@@ -4,6 +4,7 @@ import './css/Posts.css'
 import load from './images/load.svg'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {Helmet} from "react-helmet";
 
 function Posts(props) {
     const [appState, setAppState] = useState({
@@ -24,10 +25,14 @@ function Posts(props) {
     return (
         appState.loading ? (<h3 className="loding"><img className="load" alt="loading..." src={load}/></h3>) : (
             <Container key={appState.repos.id} className="posts">
-                <Row><h1 className="posts_heading">{appState.repos.heading}</h1></Row>
-                <Row id="pic_div"><img id="img_" alt={appState.repos.heading} src={"https://brillianttyagi.pythonanywhere.com/"+appState.repos.image} /></Row>
-                <Row><span className="author"><FontAwesomeIcon icon={faUser} />{appState.repos.author}</span><span className="time">{appState.repos.created}</span></Row>
-                <Row id= "posts_body" dangerouslySetInnerHTML={{__html: appState.repos.body}}></Row>
+              <Helmet>
+                <title>{appState.repos.heading}</title>
+                <meta name="description" content={appState.repos.heading.toString()} />
+              </Helmet>
+              <Row><h1 className="posts_heading">{appState.repos.heading}</h1></Row>
+              <Row id="pic_div"><img id="img_" alt={appState.repos.heading} src={"https://brillianttyagi.pythonanywhere.com/"+appState.repos.image} /></Row>
+              <Row><span className="author"><FontAwesomeIcon icon={faUser} />{appState.repos.author}</span><span className="time">{appState.repos.created}</span></Row>
+              <Row id= "posts_body" dangerouslySetInnerHTML={{__html: appState.repos.body}}></Row>
             </Container>
         )
 )

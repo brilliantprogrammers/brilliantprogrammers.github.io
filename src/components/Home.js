@@ -5,10 +5,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Work from './images/work.svg'
 import './css/Home.css'
 import Posts_card from './Posts_card'
+import {Helmet} from "react-helmet";
 class Home extends Component {
     render() { 
         return ( 
             <Container className="themed-container" fluid={true}>
+                <Helmet>
+                    <title>Brilliant programmer</title>
+                    <meta name="description" content="Brilliant programmer Coding interview Python Javascript" />
+                </Helmet>
 
                 <Row>
                     <Col className="p-2">

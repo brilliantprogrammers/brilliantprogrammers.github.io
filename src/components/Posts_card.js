@@ -1,9 +1,9 @@
- 
 import React, { useEffect, useState } from 'react'
 import { Container,Row,Col,Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import './css/Home.css'
 import load from './images/load.svg'
+
 
 function Posts_card() {
     const [appState, setAppState] = useState({
@@ -24,28 +24,24 @@ function Posts_card() {
     return ( 
         appState.loading ? (<h3 className="loding"><img className="load" alt="loading..." src={load}/></h3>) : (
             <Container className="themed-container" key={appState.repos.id} fluid={true}>
-            { appState.repos.map( (info) =>(
-            
-            <Row  xs="1" sm="2" md="4">
-                <Col id="posts">
-                    <Card id="posts_card">
-                        <div id="img__"><Card.Img id="img_posts" variant="top" src={"https://brillianttyagi.pythonanywhere.com/"+info.image} /></div>
-                        <Card.Body>
-                            <Card.Title>{info.heading}</Card.Title>
-                            <Card.Text>
-                            {info.body.slice(3,120)+"....."}
-                            </Card.Text>
-                            <Card.Link><Link to={"/blog/" + info.id.toString()}>Read More</Link></Card.Link>
-                        </Card.Body>
-                    </Card>
-                    
-                </Col>
-                
-                
-                
-            </Row>
-             ) )
-            }
+                <Row  xs="1" sm="2" md="4">
+                    { appState.repos.map( (info) =>(
+                        <Col id="posts">
+                            <Card id="posts_card">
+                                <div id="img__"><Card.Img id="img_posts" variant="top" src={"https://brillianttyagi.pythonanywhere.com/"+info.image} /></div>
+                                <Card.Body>
+                                    <Card.Title>{info.heading}</Card.Title>
+                                    <Card.Text>
+                                    {info.body.slice(3,120)+"....."}
+                                    </Card.Text>
+                                    <Card.Link><Link to={"/blog/" + info.id.toString()}>Read More</Link></Card.Link>
+                                </Card.Body>
+                            </Card>
+                            
+                        </Col>
+                    ) )
+                    }
+                </Row>
                 
             </Container>
 
