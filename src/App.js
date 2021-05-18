@@ -1,7 +1,7 @@
 import Nav from './components/nav';
 import './App.css';
 import {
-  HashRouter,
+  BrowserRouter as Router,
   Switch,
   Route,
   Redirect
@@ -14,7 +14,7 @@ import ScrollToTop from './components/scroll'
 import Posts from './components/Posts';
 function App() {
   return (
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <Router basename={process.env.PUBLIC_URL}>
         <ScrollToTop/>
         <Route render = {({ location }) => (
           <div location = { location }>
@@ -29,7 +29,7 @@ function App() {
             <Foot/>
            </div>
        )} />
-    </HashRouter>
+    </Router>
   );
 }
 
