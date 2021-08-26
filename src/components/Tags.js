@@ -32,7 +32,8 @@ function Tags(props) {
                                 <div id="img__"><Card.Img id="img_posts" variant="top" src={"https://brillianttyagi.pythonanywhere.com"+info.image} /></div>
                                 <Card.Body>
                                     <Card.Title>{info.title}</Card.Title>
-                                    <Card.Text dangerouslySetInnerHTML={{__html: info.body.slice(3,40)+"....."}}>
+                                    <Card.Text>
+                                    {info.text}
                                         
                                     </Card.Text>
                                     <Card.Link><Link to={"/blog/" + info.slug.toString()}>Read More</Link></Card.Link>
