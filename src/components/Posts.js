@@ -27,7 +27,7 @@ function Posts(props) {
             <Container key={appState.repos.id} className="posts">
               <Helmet>
                 <title>{appState.repos.title}</title>
-                <meta name="description" content={appState.repos.title} />
+                <meta name="description" content={appState.repos.title+appState.repos.text} />
                 <meta name="keywords" content="Python,Data structure,Javascript,Interview Questions,Coding,Programming" />
               </Helmet>
               <Row><h1 className="posts_heading">{appState.repos.title}</h1></Row>
