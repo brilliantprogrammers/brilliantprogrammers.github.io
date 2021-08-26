@@ -16,8 +16,8 @@ class Foot extends Component {
                         <h5>Links</h5>
                         <ul class="list-unstyled">
                             <li id="navlist_"><Link className="navlink" to="/"><FontAwesomeIcon icon={faLink} />Home</Link></li>
-                            <li id="navlist_"><Link className="navlink" to="/project"><FontAwesomeIcon icon={faLink} />Python</Link></li>
-                            <li id="navlist_"><Link className="navlink" to="/"><FontAwesomeIcon icon={faLink} />Django</Link></li>
+                            <li id="navlist_"><Link className="navlink" to="/tags/python"><FontAwesomeIcon icon={faLink} />Python</Link></li>
+                            <li id="navlist_"><Link className="navlink" to="/tags/django"><FontAwesomeIcon icon={faLink} />Django</Link></li>
                             <li id="navlist_"><Link className="navlink" to="/Contact"><FontAwesomeIcon icon={faLink} />Contact Us</Link></li>
                             <li id="navlist_"><Link className="navlink" to="/About"><FontAwesomeIcon icon={faLink} />About Us</Link></li>
                         </ul>

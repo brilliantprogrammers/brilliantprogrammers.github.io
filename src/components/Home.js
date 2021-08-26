@@ -6,6 +6,7 @@ import Work from './images/work.svg'
 import './css/Home.css'
 import Posts_card from './Posts_card'
 import {Helmet} from "react-helmet";
+import { Link } from 'react-router-dom';
 class Home extends Component {
     render() { 
         return ( 
@@ -32,7 +33,7 @@ class Home extends Component {
                         <br/>~ Albert Einstein</i>
                         </h1>
                         <button id="learn" >
-                            <a className="Link_" href="ok">Start Learning</a> 
+                            <Link className="navlink" to="tags/python">Start Learning</Link>
                             <span></span>
                             <span></span>
                             <span></span>

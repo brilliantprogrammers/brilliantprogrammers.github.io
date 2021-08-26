@@ -56,6 +56,9 @@ ol{
 .time{
     float: right;
 }
+.wid{
+    width: 100%;
+}
 #main{
     color: purple;
 }

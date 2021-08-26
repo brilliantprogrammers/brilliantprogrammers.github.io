@@ -5,7 +5,7 @@ import './css/Home.css'
 import load from './images/load.svg'
 
 
-function Posts_card() {
+function Tags(props) {
     const [appState, setAppState] = useState({
         loading: true,
         repos: null,
@@ -13,22 +13,23 @@ function Posts_card() {
     
       useEffect(() => {
         setAppState({ loading: true });
-        const apiUrl = `https://brillianttyagi.pythonanywhere.com/blog/`;
+        const apiUrl = `https://brillianttyagi.pythonanywhere.com/tags/`+props.match.params.slug.toString();
         fetch(apiUrl)
           .then((res) => res.json())
           .then((repos) => {
             setAppState({ loading: false, repos: repos });
           });
-      }, [setAppState]);
+      }, []);
       
     return ( 
         appState.loading ? (<h3 className="loding"><img className="load" alt="loading..." src={load}/></h3>) : (
             <Container className="themed-container" key={appState.repos.slug} fluid={true}>
+                <h1 id="recent">Recent Posts for {props.match.params.slug.toString()}</h1>
                 <Row  xs="1" sm="2" md="4">
                     { appState.repos.map( (info) =>(
                         <Col id="posts">
                             <Card id="posts_card">
-                                <div id="img__"><Card.Img id="img_posts" variant="top" src={"https://brillianttyagi.pythonanywhere.com/"+info.image} /></div>
+                                <div id="img__"><Card.Img id="img_posts" variant="top" src={"https://brillianttyagi.pythonanywhere.com"+info.image} /></div>
                                 <Card.Body>
                                     <Card.Title>{info.title}</Card.Title>
                                     <Card.Text dangerouslySetInnerHTML={{__html: info.body.slice(3,40)+"....."}}>
@@ -51,4 +52,4 @@ function Posts_card() {
         
 }
  
-export default Posts_card;
+export default Tags;

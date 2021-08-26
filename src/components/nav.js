@@ -15,21 +15,18 @@ class Navb extends Component {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto ">
                 <Nav.Link ><Link to="/" id="navlinkh">Home</Link></Nav.Link>
-                <Nav.Link ><Link to="/python" id="navlinkh">Python</Link></Nav.Link>
-                <Nav.Link ><Link to="/bigdata" id="navlinkh">Big Data</Link></Nav.Link>
+                <Nav.Link ><Link to="/tags/python" id="navlinkh">Python</Link></Nav.Link>
+                <Nav.Link ><Link to="/tags/bigdata" id="navlinkh">Big Data</Link></Nav.Link>
                 <NavDropdown className="navlinkh" title="Topics" id="basic-nav-dropdown">
-                  <NavDropdown.Item id="navlinkh" href="#action/3.1">Django</NavDropdown.Item>
-                  <NavDropdown.Item id="navlinkh" href="#action/3.2">Web Development</NavDropdown.Item>
-                  <NavDropdown.Item id="navlinkh" href="#action/3.3">React</NavDropdown.Item>
+                  <NavDropdown.Item id="navlinkh" href="#action/3.1"><Link to="/tags/django" id="navlinkh">Django</Link></NavDropdown.Item>
+                  <NavDropdown.Item id="navlinkh" href="#action/3.2"><Link to="/tags/web_development" id="navlinkh">Web Development</Link></NavDropdown.Item>
+                  <NavDropdown.Item id="navlinkh" href="#action/3.3"><Link to="/tags/react" id="navlinkh">React</Link></NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item id="navlinkh" href="#action/3.4">Tech</NavDropdown.Item>
+                  <NavDropdown.Item id="navlinkh" href="#action/3.4"><Link to="/tags/tech" id="navlinkh">Tech</Link></NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link to="/"><Link to="/write" id="navlinkk">Write</Link></Nav.Link>
               </Nav>
-              <Form inline>
-                <FormControl type="text" placeholder="Search Category" className="mr-sm-2" />
-                <Button variant="outline-danger">Search</Button>
-              </Form>
+
             </Navbar.Collapse>
           </Navbar>
         )
