@@ -16,7 +16,7 @@ class Navb extends Component {
               <Nav className="mr-auto ">
                 <Nav.Link ><Link to="/" id="navlinkh">Home</Link></Nav.Link>
                 <Nav.Link ><Link to="/tags/python" id="navlinkh">Python</Link></Nav.Link>
-                <Nav.Link ><Link to="/tags/bigdata" id="navlinkh">Big Data</Link></Nav.Link>
+                <Nav.Link ><Link to="/tags/big_data" id="navlinkh">Big Data</Link></Nav.Link>
                 <NavDropdown className="navlinkh" title="Topics" id="basic-nav-dropdown">
                   <NavDropdown.Item id="navlinkh" href="#action/3.1"><Link to="/tags/django" id="navlinkh">Django</Link></NavDropdown.Item>
                   <NavDropdown.Item id="navlinkh" href="#action/3.2"><Link to="/tags/web_development" id="navlinkh">Web Development</Link></NavDropdown.Item>
