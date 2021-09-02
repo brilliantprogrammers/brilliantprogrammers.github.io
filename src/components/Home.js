@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import { Container,Row,Col } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Work from './images/work.svg'
+import Work from './images/work.jpg'
 import './css/Home.css'
 import Posts_card from './Posts_card'
 import {Helmet} from "react-helmet";
